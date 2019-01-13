@@ -104,6 +104,10 @@ header {
     background: url(res/loading.gif) 50% 50% no-repeat;
 }
 
+.userName {
+    color: darkgray;
+}
+
 .viewers {
     float: right;
 }
