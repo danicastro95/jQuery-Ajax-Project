@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    z-index: -1;
+}
+
+.game {
+    width: 100%;
+    height: 22em;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 2.5em;
+}
+
+.game:hover>h3 {
+    text-decoration: underline;
+}
+
+.gameImg {
+    width: 90%;
+    height: 85%;
+    background: url(res/loading.gif) 50% 50% no-repeat;
+}
+
+#loading-anim {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#loading-anim img {
+    height: 100px;
+}
+
+header {
+    height: 10%;
+    background-color: blueviolet;
+    color: white;
+    text-align: left;
+    font-size: 5em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5%;
+    margin-bottom: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    padding-right: 5%;
+}
+
+#detail {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2.5%;
+}
+
+.streamsHeader {
+    width: 80%;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    padding: 0.5%;
+    padding-left: 2.5%;
+    font-size: 3em;
+}
+
+.stream:hover {
+    cursor: pointer;
+}
+
+.stream:hover .streamName {
+    text-decoration: underline;
+}
+
+#streams {
+    overflow: scroll;
+    background-color: white;
+    height: 80%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    padding: 1.5em;
+    padding-bottom: 0;
+}
+
+.streamThumbnail {
+    width: 100%;
+    background: url(res/loading.gif) 50% 50% no-repeat;
+}
+
+.viewers {
+    float: right;
+}
+
+#searchContainer {
+    float: right;
+    position: relative;
+    z-index: 1;
+}
+
+#searchBar {
+    width: 20em;
+    font-size: large;
+}
+
+.searchResult {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    font-size: medium;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
